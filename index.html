@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>CardGame</title>
+  </head>
+  <body>
+    <header>
+      <h1>Poker Card Game</h1>
+    </header>
+    <main>
+      <section id="players">
+        <div id="suresh" class="player">
+          <h2 class="name">Suresh</h2>
+          <div class="cards">
+            <div class="card" data-card="SPADE-THREE">
+              <img src="./images/back.jpg" alt="back of card" />
+            </div>
+            <div class="card" data-card="DIAMOND-FIVE">
+              <img src="./images/back.jpg" alt="back of card" />
+            </div>
+            <div class="card" data-card="CLUB-QUEEN">
+              <img src="./images/back.jpg" alt="back of card" />
+            </div>
+          </div>
+          <div class="highest-card">
+            <button disabled>Show Highest Card</button>
+            <p></p>
+          </div>
+        </div>
+        <div id="ramesh" class="player">
+          <h2 class="name">Ramesh</h2>
+          <div class="cards">
+            <div class="card" data-card="SPADE-JACK">
+              <img src="./images/back.jpg" alt="back of card" />
+            </div>
+            <div class="card" data-card="DIAMOND-KING">
+              <img src="./images/back.jpg" alt="back of card" />
+            </div>
+            <div class="card" data-card="HEART-QUEEN">
+              <img src="./images/back.jpg" alt="back of card" />
+            </div>
+          </div>
+          <div class="highest-card">
+            <button disabled>Show Highest Card</button>
+            <p></p>
+          </div>
+        </div>
+      </section>
+      <section id="winner">
+        <button id="declare" disabled>Declare Winner</button>
+        <p></p>
+      </section>
+    </main>
+    <footer>
+      <p>Shubham Kumar &nbsp; | &nbsp; shubhamkumarlhh@gmail.com</p>
+      <p></p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00d2ff;
+  font-family: Poppins, sans-serif;
+}
+
+header,
+footer {
+  padding: 0.7rem 1rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+header h1 {
+  text-align: center;
+  font-family: Lobster;
+  font-size: 2.5rem;
+}
+
+#players {
+  display: flex;
+}
+
+.player {
+  width: 50%;
+  border: 0.5rem solid #fff;
+  padding: 2rem 1rem;
+  transition: border-color 2s;
+}
+
+.name {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 0.2rem 0.5rem;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  border: 0.2rem solid black;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.card img {
+  width: 14rem;
+  border-radius: 1rem;
+  border: 0.2rem solid #000;
+}
+
+/* .card-face {
+} */
+
+.highest img {
+  transform: scale(1.15);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  border: 0.3rem solid #000;
+  transition: all 1s;
+}
+
+.highest-card {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+button {
+  outline: none;
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.highest-card button:hover {
+  background-color: #f3f3f3;
+}
+
+p {
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+#winner {
+  border-top: 0.5rem solid #fff;
+  padding: 2rem 2rem 4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#declare {
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  font-family: Lobster;
+}
+
+#winner p {
+  font-size: 2.5rem;
+}
+
+.winner-player h2 {
+  background-color: #03c003;
+}
+
+.loser-player h2 {
+  background-color: #f00000;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin-top: 0;
+  word-wrap: break-word;
+}
+
+@media only screen and (max-width: 1100px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #players {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .player {
+    width: 100%;
+  }
+}
